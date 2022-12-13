@@ -13,7 +13,7 @@ They then fit their simulated results to the ones they obtained from the experim
 
 Model 
 
-Below is their model for the growth dynamics of the A20 cells with parameters determined by their experimental data 
+Below is their model for the growth dynamics of the A20 cells without drug with parameters determined by their experimental data 
 
 ![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/a9c3eed99829ae11c2872972dbbf00cad15a92f2/Screen%20Shot%202022-12-13%20at%2013.43.42.png)
 
@@ -25,18 +25,25 @@ The model was expanded to include the action of the drug on the cell growth dyna
 Here a new term has been added to each equation. C is the concentration of the drug, μAC is the cytotoxicity rate due to the drug (1/h), μCA is the deactivation rate of the drug as it kills the cells and this varies by drug (1/h) and μC is the chemical deactivation of the drug (1/h). 
 
 
-Results
-why chose the parameter 
-model fit - parameters and starting conditions 
+Results and Implications 
 
 ![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/647b0da8b1b7694feb765ea67bc00a14c5d2d59a/modelfit.png)
+Fig.1 Model fitting to the data presented in the paper 
 
+Figure 1 shows the model fitting to the experimental data using the model for the growth dynamics without drug. The starting live and dead cells were 50,000 and 2,500 cells, respectively. The simulated model generally fits the data and is similar to the simulated model presented in the paper, but not exactly. The parameters here were r = 0.07, K=4x10^6, d=0.017 and μA=3.73x10^-8.
+
+Bifurcation analysis was done for the parameter μA looking at the state of living cells at the steady state of dead cells (2x10^6 cells). μA was chosen because it was thought that the death rate should have a great impact on the system growth dynamics and also 
 ![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/c10022cc1228b745ee5f4511c90e3a0b3fe828c8/bifur.png)
+
+
+
+
+
 
 ![plot] (https://github.com/traceymoyston/CHE2410_Project2/blob/c10022cc1228b745ee5f4511c90e3a0b3fe828c8/Asens.png)
 
 
-Implications 
+ 
 
 References 
 Guzev E, Luboshits G, Bunimovich-Mendrazitsky S, Firer MA. Experimental Validation of a Mathematical Model to Describe the Drug Cytotoxicity of Leukemic Cells. Symmetry. 2021; 13(10):1760. https://doi.org/10.3390/sym13101760
