@@ -32,15 +32,25 @@ Fig.1 Model fitting to the data presented in the paper
 
 Figure 1 shows the model fitting to the experimental data using the model for the growth dynamics without drug. The starting live and dead cells were 50,000 and 2,500 cells, respectively. The simulated model generally fits the data and is similar to the simulated model presented in the paper, but not exactly. The parameters here were r = 0.07, K=4x10^6, d=0.017 and μA=3.73x10^-8.
 
-Bifurcation analysis was done for the parameter μA looking at the state of living cells at the steady state of dead cells (2x10^6 cells). μA was chosen because it was thought that the death rate should have a great impact on the system growth dynamics and also 
+Bifurcation analysis was done for the parameter μA looking at the state of living cells at the steady state of dead cells (2x10^6 cells). μA was chosen because it was thought that the death rate should have a great impact on the system growth dynamics and also it may inform of how the system may change with other leukemic cells e.g. bovine, that may have a different death rate, assuming the other parameters are roughly similar.
+
 ![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/c10022cc1228b745ee5f4511c90e3a0b3fe828c8/bifur.png)
+Fig.2 Bifurcation analysis for A with changing μA
 
+Figure 2 shows that changes in μA does not alter the steady state of A. 
 
+Parameter sensitivity analysis was carried out for A and Ad 
 
+![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/c10022cc1228b745ee5f4511c90e3a0b3fe828c8/Asens.png)
+Fig. 3 Sensitivity plot for the parameters for A
 
+![plot](https://github.com/traceymoyston/CHE2410_Project2/blob/94454fe2c0d4a6834e4c90d93319c2ef27843c4b/Adsens.png)
+Fig. 4 Sensitivity plot for the parameters for Ad 
 
+Fig 3 shows that for A, r is the most sensitive parameter in the system and Fig 4 shows that for Ad d is the most sensitive parameter in the system with the results of linear regression being:
 
-![plot] (https://github.com/traceymoyston/CHE2410_Project2/blob/c10022cc1228b745ee5f4511c90e3a0b3fe828c8/Asens.png)
+A =  -0.007187059687683949 μA +  -0.003762962299401257 d + 0.04040698807528044 K 1.3347833175041406 +r
+Ad =  0.07852500673266066 μA +  -0.3406473798923214 d + 0.001155125834196605 K 0.06497060426454451 +r
 
 
  
